@@ -3,6 +3,9 @@
 
 hien_thi = "Đại học Quốc Gia, Khu phố 6, P.Linh Trung, Q.Thủ Đức, Tp.HCM"
 #bài 1
-print(hien_thi.replace(', ','\n'))
+for i in hien_thi.split(', '):
+    print(i)
 #bài 2
-print(hien_thi.replace('P.','').replace('Q.','').replace('Tp.','').replace(', ','\n'))
+n = (hien_thi.replace('P.','').replace('Q.','').replace('Tp.','') .split(', ')) 
+for hien_thi in n:
+    print(hien_thi)
